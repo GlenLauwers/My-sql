@@ -1,0 +1,1 @@
+SELECT student_naam AS Naam, student_voornaam AS Voornaam, cursus_naam AS Cursus, inschrijving_datum AS Inschrijvingsdatum FROM inschrijvingen inner join cursussen ON inschrijvingen.cursus_id = cursussen.cursus_id inner join studenten ON inschrijvingen.student_id = studenten.student_id ORDER BY Naam, Inschrijvingsdatum
